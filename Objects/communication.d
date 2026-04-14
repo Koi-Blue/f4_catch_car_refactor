@@ -48,6 +48,7 @@
 .\objects\communication.o: .\System\usart.h
 .\objects\communication.o: .\Car\Move.h
 .\objects\communication.o: .\Action\Action_Y.h
+.\objects\communication.o: .\Action\take_action.h
 .\objects\communication.o: .\Action\Action_Z.h
 .\objects\communication.o: .\Action\Action_Turn_Z.h
 .\objects\communication.o: .\Task\Action.h

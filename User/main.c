@@ -31,9 +31,9 @@ int   sstep;
 
 void JY901B_check(float num)
 {
-	int count = 0;
+	int count = 0; (void) count; // 消除未使用警告 SiJY 26-4-14  确定不使用之后，需要清除
 	float Yaw_last = 1000;	
-	float sum = 0;
+	float sum = 0; (void) sum  ; // 消除未使用警告 SiJY 26-4-14
 
 	Receive_Gyro();
 	while(Receive_Yaw==0)

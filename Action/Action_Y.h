@@ -2,6 +2,7 @@
 #define __ACTION_Y_H
 
 #include "stm32f4xx.h"                  // Device header
+#include "take_action.h"
 
 void Action_Y_PWM_Init(void);
 void TIM2_IRQHandler(void);

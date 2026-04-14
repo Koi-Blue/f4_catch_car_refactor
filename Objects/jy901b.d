@@ -48,6 +48,7 @@
 .\objects\jy901b.o: .\System\usart.h
 .\objects\jy901b.o: .\Car\Move.h
 .\objects\jy901b.o: .\Action\Action_Y.h
+.\objects\jy901b.o: .\Action\take_action.h
 .\objects\jy901b.o: .\Action\Action_Z.h
 .\objects\jy901b.o: .\Action\Action_Turn_Z.h
 .\objects\jy901b.o: .\Task\Action.h

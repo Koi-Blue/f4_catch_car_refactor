@@ -430,14 +430,14 @@
               <FilePath>.\Action\Action_Turn_Z.h</FilePath>
             </File>
             <File>
-              <FileName>take_action.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\take_action.h</FilePath>
-            </File>
-            <File>
               <FileName>take_action.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\take_action.c</FilePath>
+              <FilePath>.\Action\take_action.c</FilePath>
+            </File>
+            <File>
+              <FileName>take_action.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Action\take_action.h</FilePath>
             </File>
           </Files>
         </Group>

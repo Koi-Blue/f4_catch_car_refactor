@@ -48,6 +48,7 @@
 .\objects\pid.o: .\System\usart.h
 .\objects\pid.o: .\Car\Move.h
 .\objects\pid.o: .\Action\Action_Y.h
+.\objects\pid.o: .\Action\take_action.h
 .\objects\pid.o: .\Action\Action_Z.h
 .\objects\pid.o: .\Action\Action_Turn_Z.h
 .\objects\pid.o: .\Task\Action.h

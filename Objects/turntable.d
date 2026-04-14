@@ -48,6 +48,7 @@
 .\objects\turntable.o: .\System\usart.h
 .\objects\turntable.o: .\Car\Move.h
 .\objects\turntable.o: .\Action\Action_Y.h
+.\objects\turntable.o: .\Action\take_action.h
 .\objects\turntable.o: .\Action\Action_Z.h
 .\objects\turntable.o: .\Action\Action_Turn_Z.h
 .\objects\turntable.o: .\Task\Action.h

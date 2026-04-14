@@ -9,17 +9,16 @@
 // 结构暂时显示放在头文件，refactor结束后，根据可见性调整其位置   SiJY 26-4-14
 // 方向定义
 typedef enum {
-    CW = 0,    // 顺时针
-    CCW = 1    // 逆时针
-} MotorDirection;
+    DIR_CW = 0,     // 顺时针
+    DIR_CCW = 1     // 逆时针
+}MotorDirection;
 
-// 运行状态定义
 typedef enum {
-    STOP = 0,
-    ACCEL = 1,
-    RUN = 2,
-    DECEL = 3
-} MotorRunState;
+    STATE_STOP = 0,
+    STATE_ACCEL = 1,
+    STATE_RUN = 2,
+    STATE_DECEL = 3
+}MotorRunState;
 
 typedef struct {
     TIM_TypeDef *tim;              // 定时器
@@ -56,11 +55,11 @@ typedef struct {
     uint32_t speed;                // 速度
 } MotorControl;
 
-void action_PWM_init(MotorControl *act_cfg);
-void TIM_IRQHandler(MotorControl *act_cfg);
-void action_move(MotorControl *act_cfg, int step, uint32_t accel, uint32_t decel, uint32_t speed);
-void speed_decision(MotorControl *act_cfg);
-void step_counter(MotorControl *act_cfg, signed char inc);
-void action_dir(MotorControl *act_cfg, uint8_t a);
+void motor_action_PWM_init(MotorControl *act_cfg);
+void motor_TIM_IRQHandler(MotorControl *act_cfg);
+void motor_action_move(MotorControl *act_cfg, int step, uint32_t accel, uint32_t decel, uint32_t speed);
+void motor_speed_decision(MotorControl *act_cfg);
+void motor_step_counter(MotorControl *act_cfg, signed char inc);
+void motor_action_dir(MotorControl *act_cfg, uint8_t a);
 
 #endif  // __TAKE__ACTION_H

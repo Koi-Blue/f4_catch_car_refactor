@@ -48,6 +48,7 @@
 .\objects\timer.o: System\usart.h
 .\objects\timer.o: .\Car\Move.h
 .\objects\timer.o: .\Action\Action_Y.h
+.\objects\timer.o: .\Action\take_action.h
 .\objects\timer.o: .\Action\Action_Z.h
 .\objects\timer.o: .\Action\Action_Turn_Z.h
 .\objects\timer.o: .\Task\Action.h
